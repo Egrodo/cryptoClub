@@ -3371,8 +3371,8 @@
 			vertical-align: middle;
 			margin-top: -20vh;
 			z-index: 1;
-			background: rgba(12, 12, 12, 0.5);
-			border-radius: 100em; 
+			/* background: rgba(12, 12, 12, 0.5);
+			border-radius: 100em;  */
 		}
 
 			#banner .content header {
@@ -3720,8 +3720,8 @@
 					}
 
 					#banner .content .image {
-						height: 9em;
-						width: 9em;
+						height: 60vw;
+						width: 60vw;
 					}
 
 		/* Off-Canvas Navigation */
