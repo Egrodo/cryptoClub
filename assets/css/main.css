@@ -2450,7 +2450,6 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-		overflow: hidden;
 	}
 
 		.image:before {
@@ -2459,7 +2458,6 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url("images/overlay.png");
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -3333,7 +3331,7 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner3.png");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3397,16 +3395,13 @@
 				}
 
 			#banner .content .image {
-				border-radius: 100%;
 				display: inline-block;
-				height: 18em;
 				margin-left: 3em;
 				vertical-align: middle;
 				width: 18em;
 			}
 
 				#banner .content .image img {
-					border-radius: 100%;
 					display: block;
 					width: 100%;
 				}
