@@ -3337,6 +3337,35 @@
 		position: absolute;
 	}
 
+	div.row.ticker {
+		padding-bottom: 1em;
+	}
+
+	div.full {
+		width: 100%;
+	}
+  .positive {
+    color: #01FF70;
+  }
+  .positive.arrow::before {
+    content: '▲ ';
+  }
+
+  .negative {
+    color: #FF4136;
+  }
+  .negative.arrow::before {
+    content: '▼ ';
+  }
+
+  span:not(.marquee) {
+    padding-right: .5em;
+  }
+
+  span.marquee {
+    padding-right: 1em;
+  }
+	
 /* Banner */
 
 	#banner {
