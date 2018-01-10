@@ -910,8 +910,9 @@
 	@media screen and (max-width: 980px) {
 
 		.row > * {
-			padding: 0 0 0 2.5em;
+			padding: 0 0 0 2.5em
 		}
+
 
 		.row {
 			margin: 0 0 -1px -2.5em;
@@ -3339,11 +3340,9 @@
 
 	div.row.ticker {
 		padding-bottom: 1em;
+		margin-left: auto;
 	}
 
-	div.full {
-		width: 100%;
-	}
   .positive {
     color: #01FF70;
   }
@@ -3357,6 +3356,31 @@
   .negative.arrow::before {
     content: '▼ ';
   }
+
+	/* Marquee Code */
+
+	.full {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 2em;
+	}
+
+	div#ticker {
+		position: absolute;
+		white-space: nowrap;
+		animation: marquee 20s linear infinite;
+	}
+
+	div#ticker:hover {
+		animation-play-state: paused;
+		cursor: pointer;
+	}
+
+	@keyframes marquee {
+		0% { transform: translateX(45%); }
+		100% { transform: translateX(-100%); }
+	}
 
   span:not(.marquee) {
     padding-right: .5em;
@@ -3616,6 +3640,10 @@
 
 		/* Banner */
 
+		div.content > header {
+			padding-bottom: 1em;
+		}
+
 			#banner {
 				background-attachment: scroll;
 			}
@@ -3631,7 +3659,6 @@
 
 					#banner .content header {
 						display: block;
-						margin: 0 0 2em 0;
 						text-align: center;
 					}
 
@@ -3748,7 +3775,7 @@
 				}
 
 				#banner .content {
-					padding: 4.0625em 1.5em 4.875em 1.5em;
+					padding: 7.0625em 1.5em 4.875em 1.5em;
 				}
 
 					#banner .content header h2 {
@@ -4018,7 +4045,7 @@
 		/* Banner */
 
 			#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
+				padding: 4em 1.5625em 5.25em 1.5625em;
 			}
 
 		/* Footer */
