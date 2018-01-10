@@ -3515,7 +3515,7 @@
 		/* Banner */
 
 			#banner .content {
-				padding: 4.5em;
+				padding: 3.5em;
 			}
 
 		/* Footer */
@@ -3999,3 +3999,25 @@
 					}
 
 	}
+
+@media screen and (max-width: 1833px) {
+	#banner .content header h2 {
+		font-size: 2em;
+	}
+	header h2 + p {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#banner .content .image {
+		width: 15em;
+	}
+}
+
+@media screen and (max-width: 1022px) {
+	#banner .content .image {
+		width: 12em;
+	}
+}
+
