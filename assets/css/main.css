@@ -2786,14 +2786,14 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #e76278;
+				background-color: #47c0b3;
 			}
 
 			input[type="submit"].special:active,
 			input[type="reset"].special:active,
 			input[type="button"].special:active,
 			.button.special:active {
-				background-color: #e13652;
+				background-color: #47c0b3;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
