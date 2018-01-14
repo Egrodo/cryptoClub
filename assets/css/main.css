@@ -3338,6 +3338,9 @@
 		position: absolute;
 	}
 
+
+	/* Marquee Code */
+
 	div.row.ticker {
 		padding-bottom: 1em;
 		margin-left: auto;
@@ -3355,10 +3358,8 @@
   }
   .negative.arrow::before {
     content: '▼ ';
-  }
-
-	/* Marquee Code */
-
+	}
+	
 	.full {
 		position: relative;
 		overflow: hidden;
