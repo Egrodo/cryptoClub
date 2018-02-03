@@ -3008,7 +3008,7 @@
 
 		.spotlight.left .content, .spotlight.right .content {
 			height: 101%;
-			padding: 6em 3em;
+			padding: 1em 3em;
 			top: 0;
 			width: 28em;
 		}
@@ -3028,7 +3028,7 @@
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: #47c0b3;
 		}
 
 		.spotlight.style3 .content {
@@ -3339,7 +3339,12 @@
 		position: absolute;
 	}
 
-
+	.fb-page, 
+	.fb-page span, 
+	.fb-page span iframe[style] { 
+			width: 100% !important; 
+	}
+	
 	/* Marquee Code */
 
 	div.row.ticker {
