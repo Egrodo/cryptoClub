@@ -1,4 +1,4 @@
-// Custom Medium posts Ret	riever by Noah Yamamoto
+// Custom Medium posts Retriever by Noah Yamamoto
 
 // Uses rss2json to request rss feed from Medium and display it properly.
 const retrieve = () => {
@@ -24,9 +24,7 @@ const blogDisp = posts => {
 		title.innerHTML = posts.items[i].title;
 		date.innerHTML = `<p>By: <a href="https://medium.com/@Blockchainbaruch">${posts.items[i].author}</a> <br> ${posts.items[i].pubDate.substr(0,posts.items[i].pubDate.indexOf(' '))}</p>`;
 		content.innerHTML = posts.items[i].content;
-		display.appendChild(title);
-		display.appendChild(date);
-		display.appendChild(content);
+		display.append(title, date, content);
 		document.getElementById('blog').appendChild(display);
 	}
 };
