@@ -2,7 +2,7 @@
 
 // Uses rss2json to request rss feed from Medium and display it properly.
 const retrieve = () => {
-	fetch('https://api.rss2json.com/v1/api.json?api_key=4iwmzf0yryfd6ao88oqtqao8cxrwxrdefcutllj4&rss_url=https://medium.com/feed/@blockchainbaruch&count=3')
+	fetch('https://api.rss2json.com/v1/api.json?api_key=4iwmzf0yryfd6ao88oqtqao8cxrwxrdefcutllj4&rss_url=https://medium.com/@cunycrypto&count=3')
 	.then(res => {
 		if (res.ok) {
 			return res.json();
