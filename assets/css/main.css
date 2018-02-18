@@ -4151,6 +4151,17 @@ div.cont {
 	margin-top: 2em;
 }
 
+section#signup {
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+section#signup div.email {
+	margin-left: 20vw;
+	margin-right: 20vw;
+	padding-bottom: 2em;
+}
+
 @media screen and (max-width: 800px) {
 	section#blog div {
 		padding: 0 2em 2em;
