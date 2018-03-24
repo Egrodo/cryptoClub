@@ -5,7 +5,7 @@
     <title>Cuny Crypto {{page.title}}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -20,14 +20,20 @@
         </h1>
         <nav id="nav">
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
+                <li style="-moz-user-select: none; cursor: pointer; white-space: nowrap; opacity: 1;" class="opener">
+                    <a href="/">Home</a>
+
+                    <ul style="-moz-user-select: none; display: none; position: absolute;" class="">
+                        <li style="white-space: nowrap;">
+                            <a href="index.html#About" style="display: block;">About</a>
+                        </li>
+                        <li style="white-space: nowrap;">
+                            <a href="index.html#Team" style="display: block;">Team</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a class="scrolly" href="index.html#About">About</a>
-                </li>
-                <li>
-                    <a class="scrolly" href="index.html#Team">Team</a>
+                    <a href="events.html">Events</a>
                 </li>
                 <li>
                     <a href="blog.html">Blog</a>
@@ -40,7 +46,8 @@
                 </li>
                 <li>
                     <!-- to do: modal -->
-                    <a href="https://cunycrypto.us17.list-manage.com/subscribe/post?u=e1aecc6fda6b4de7b97e745d2&amp;id=e8c541a1b9" target="_blank" class="button special">Subscribe</a>
+                    <a href="https://cunycrypto.us17.list-manage.com/subscribe/post?u=e1aecc6fda6b4de7b97e745d2&amp;id=e8c541a1b9" target="_blank"
+                        class="button special">Subscribe</a>
                 </li>
             </ul>
         </nav>

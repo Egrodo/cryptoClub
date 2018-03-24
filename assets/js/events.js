@@ -19,7 +19,10 @@ const reqEvents = () => {
             const completed = event.status === 'completed' ? 'completed' : ''
             return `
                 <div class="event ${completed}">
-                    <h3><a href="${event.url}" target="_blank">${event.name.text}</a></h3>
+                <a href="${event.url}" target="_blank" style="border-bottom: none;">
+                    <h3>${event.name.text}</h3>
+                    <img src="${event.logo.url}" />
+                </a>
                     <p class="${completed}">${formatISO8601(event.start.local)}</p>
                     <p>${event.description.text}</p>
                 </div> 
