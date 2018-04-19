@@ -21,7 +21,7 @@ const reqEvents = () => {
                 <div class="event ${completed}">
                 <a href="${event.url}" target="_blank" style="border-bottom: none;">
                     <h3>${event.name.text}</h3>
-                    <img src="${event.logo.url}" />
+                    <img src="${event.logo ? event.logo.url : null}" />
                 </a>
                     <p class="${completed}">${formatISO8601(event.start.local)}</p>
                     <p>${event.description.text}</p>
