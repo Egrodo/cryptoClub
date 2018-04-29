@@ -15,7 +15,9 @@ title: Gallery
 			{% for image in site.static_files %} 
 				{% if image.path contains 'gallery' %}
 				<div class="content">
-					<img src="{{ site.baseurl }}{{ image.path }}" alt="" />
+					{% assign description = image.name | split: "." | first | split: "-" | last | lstrip %}
+					<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ description }}" />
+					<p>{{ description }}</p>
 				</div>
 				{% endif %} 
 			{% endfor %}
